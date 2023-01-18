@@ -37,36 +37,6 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="4">
-          <v-card color="#555555" dark>
-            <v-card-title>
-              <span class="text-h6 font-weight-light">Links</span>
-            </v-card-title>
-
-            <v-card-text class="text-h5 font-weight-bold">
-              <v-btn
-                depressed
-                href="https://github.com/robinsone/raid-roster/wiki"
-              >
-                Wiki
-              </v-btn>
-              <v-btn
-                class="ml-1"
-                depressed
-                href="https://github.com/robinsone/raid-roster/wiki/Loot-Rules"
-              >
-                Loot Rules
-              </v-btn>
-              <v-btn
-                class="ml-1"
-                depressed
-                href="https://github.com/robinsone/raid-roster/wiki/ERT-Notes"
-              >
-                ERT-Notes
-              </v-btn>
-            </v-card-text>
-          </v-card>
-        </v-col>
         <v-col cols="12">
           <v-card v-if="guildProgress" color="#555555" dark>
             <v-card-title>
@@ -403,7 +373,7 @@ export default {
       })
     },
     async getGuildProgress() {
-      const url = `https://raider.io/api/v1/guilds/profile?region=us&realm=illidan&name=the%20church&fields=raid_progression`
+      const url = `https://raider.io/api/v1/guilds/profile?region=us&realm=illidan&name=proper%20villains&fields=raid_progression`
       this.guildProgress = (await this.$axios.$get(url)).raid_progression
     },
     getColor(ilvl) {
