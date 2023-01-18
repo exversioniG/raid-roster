@@ -35,7 +35,7 @@
     <v-app-bar fixed app hide-on-scroll height="64" elevate-on-scroll>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = true" />
       <nuxt-link to="/" class="d-flex" style="text-decoration: none">
-        <h2>The Church - WoW Raiding Guild</h2>
+        <h2>Proper Villains - WoW Raiding Guild - Illidan</h2>
       </nuxt-link>
       <v-spacer />
       <template></template>
